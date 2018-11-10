@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33875385921960544}
   - component: {fileID: 23269183012924490}
   - component: {fileID: 65115242127142160}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33893625376530658}
   - component: {fileID: 23800959350969972}
   - component: {fileID: 65602729030577518}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 33019114856333220}
   - component: {fileID: 23658713218732700}
   - component: {fileID: 65532034048832194}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 33235901032590996}
   - component: {fileID: 23314912554755846}
   - component: {fileID: 65229396924828050}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 33756830754883500}
   - component: {fileID: 23912067912259450}
   - component: {fileID: 65216621077800952}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4154651466189650}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: NaroznikWewnetrzny
   m_TagString: Untagged
   m_Icon: {fileID: 0}

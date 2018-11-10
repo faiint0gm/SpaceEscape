@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33768537060159288}
   - component: {fileID: 23717604977344402}
   - component: {fileID: 65444640730403664}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4582696546700838}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 33393454642443922}
   - component: {fileID: 23902680826947748}
   - component: {fileID: 65263226448431798}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 33174763316578856}
   - component: {fileID: 23400999913771784}
   - component: {fileID: 65080639685525640}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 33994030776119372}
   - component: {fileID: 23890791461034924}
   - component: {fileID: 65117756923383520}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 33629653836411868}
   - component: {fileID: 23714804618345894}
   - component: {fileID: 65464776559050338}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4454828866022006}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sciana
   m_TagString: Untagged
   m_Icon: {fileID: 0}

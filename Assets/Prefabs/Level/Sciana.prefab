@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33757944367472006}
   - component: {fileID: 23067376598633408}
   - component: {fileID: 65023013353488204}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sciana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33132613630116524}
   - component: {fileID: 23505237658556798}
   - component: {fileID: 65837980264980156}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
