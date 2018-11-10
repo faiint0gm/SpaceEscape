@@ -11,23 +11,14 @@ public class PlayerController : MonoBehaviour {
     public float movementSpeed;
 
     float direction;
-    float time;
     private void Start()
     {
         direction = 0;
-        time = 0;
-    }
-
-    private void Update()
-    {
-        //CheckMovement();
     }
 
     private void FixedUpdate()
     {
         CheckMovement();
-        if (Input.GetKeyDown(KeyCode.E))
-            Interact();
     }
 
     void CheckMovement()
