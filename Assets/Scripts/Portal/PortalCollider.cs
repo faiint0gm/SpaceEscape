@@ -10,9 +10,19 @@ public class PortalCollider : MonoBehaviour
         if (other.tag == "Player")
         {
             CameraController.instance.teleportCam = true;
-            Debug.Log(destination.rotation);
-            other.transform.rotation = destination.rotation * Quaternion.Euler(0, 90, 0);
-            other.transform.position = destination.position + destination.right * 1f;
+
+            Vector3 newEulerRotation = destination.eulerAngles;
+            newEulerRotation.x = 0f;
+            newEulerRotation.y = newEulerRotation.y + 90f;
+            newEulerRotation.z = 0f;
+            other.transform.eulerAngles = newEulerRotation;
+
+            Vector3 newPosition = new Vector3(
+                destination.position.x,
+                other.transform.position.y,
+                destination.position.z
+            ) + destination.right * 1f;
+            other.transform.position = newPosition;
             StartCoroutine(CameraController.instance.MoveAfterTeleport(1));
         }
     }
