@@ -331,31 +331,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1325285753163348, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224878054058345422, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224632302768697908, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224158381703971486, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224250168739388956, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1496341816230800, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224162229410905424, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
@@ -480,7 +480,7 @@ Prefab:
     - target: {fileID: 224369972864433690, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -188
+      value: -166
       objectReference: {fileID: 0}
     - target: {fileID: 224369972864433690, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
