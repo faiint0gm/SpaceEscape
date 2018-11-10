@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class OpponentController : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class OpponentController : MonoBehaviour {
     [Range(0,1)]
     public float rotationSpeed;
 
+
     bool increasing;
     float actualAngle;
     float rotationMultiplier;
@@ -25,7 +27,6 @@ public class OpponentController : MonoBehaviour {
             Application.Quit();
         }
 
-        instance = this;
         rotationMultiplier = 100;
         transform.rotation = Quaternion.Euler(0, minAngle, 0);
         actualAngle = minAngle;
@@ -60,6 +61,5 @@ public class OpponentController : MonoBehaviour {
 
         transform.rotation = Quaternion.Euler(0, actualAngle, 0);
     }
-
 
 }
