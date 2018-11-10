@@ -983,7 +983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4454828866022006, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1952113778710738, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
       propertyPath: m_Name
@@ -1332,23 +1332,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4454828866022006, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1952113778710738, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
       propertyPath: m_Name
       value: Sciana (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4454828866022006, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.020004
-      objectReference: {fileID: 0}
-    - target: {fileID: 4454828866022006, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4454828866022006, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
@@ -1645,7 +1633,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4615867976462518, guid: 4affc6b68d4659e4b956d87b3bf8c896, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1655218544615612, guid: 4affc6b68d4659e4b956d87b3bf8c896, type: 2}
       propertyPath: m_Name
@@ -1784,7 +1772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4454828866022006, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1952113778710738, guid: 817d882951ef5f8459abb2828b27b298, type: 2}
       propertyPath: m_Name
