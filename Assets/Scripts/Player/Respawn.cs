@@ -27,7 +27,7 @@ public class Respawn : MonoBehaviour {
         {
             StartCoroutine(playerDie());
             
-            cameraShake.shakecamera();
+            cameraShake.Shakecamera();
         }
     }
 

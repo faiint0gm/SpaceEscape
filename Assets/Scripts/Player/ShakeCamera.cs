@@ -5,10 +5,6 @@ using UnityEngine;
 public class ShakeCamera : MonoBehaviour {
 
 
-    // Transform of the camera to shake. Grabs the gameObject's transform
-    // if null.
-    public Transform camTransform;
-
     // How long the object should shake for.
     public float shakeDuration = 0.3f;
 
@@ -19,17 +15,10 @@ public class ShakeCamera : MonoBehaviour {
     Vector3 originalPos;
     public bool shaketrue = false;
 
-    void Awake()
-    {
-        if (camTransform == null)
-        {
-            camTransform = GetComponent(typeof(Transform)) as Transform;
-        }
-    }
 
     void OnEnable()
     {
-        originalPos = camTransform.localPosition;
+        originalPos = transform.localPosition;
     }
 
     void Update()
@@ -38,20 +27,20 @@ public class ShakeCamera : MonoBehaviour {
         {
             if (shakeDuration > 0)
             {
-                camTransform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+                transform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
 
                 shakeDuration -= Time.deltaTime * decreaseFactor;
             }
             else
             {
                 shakeDuration = 1f;
-                camTransform.localPosition = originalPos;
+                transform.localPosition = originalPos;
                 shaketrue = false;
             }
         }
     }
 
-    public void shakecamera()
+    public void Shakecamera()
     {
         shaketrue = true;
     }
