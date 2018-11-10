@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4107517239005670}
   - component: {fileID: 33797153071040696}
   - component: {fileID: 23125708199695780}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4549948760827884}
   - component: {fileID: 114605616088171772}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 4646201297996878}
   - component: {fileID: 65266326947379090}
   - component: {fileID: 114304757701359176}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EntryBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4602363384161198}
   - component: {fileID: 33596527224387778}
   - component: {fileID: 23171262548967392}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4595294256752348}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Entry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4280576900997616}
   - component: {fileID: 65310615964628932}
   - component: {fileID: 114771824190307068}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EntryFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 4017383093281674}
   - component: {fileID: 65480134984661660}
   - component: {fileID: 114779347111215640}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ExitBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4126414312435072}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 4510794863564008}
   - component: {fileID: 65911914890388330}
   - component: {fileID: 114350097113279450}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ExitFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}

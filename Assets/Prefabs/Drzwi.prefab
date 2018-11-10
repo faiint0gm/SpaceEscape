@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4082979056435192}
   - component: {fileID: 33369283707200204}
   - component: {fileID: 23077687893159790}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door_LP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4574928296224648}
   - component: {fileID: 33985993388407234}
   - component: {fileID: 23242375784822864}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Force_field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4703164012597372}
   - component: {fileID: 114008624192102700}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Drzwi
   m_TagString: Untagged
   m_Icon: {fileID: 0}

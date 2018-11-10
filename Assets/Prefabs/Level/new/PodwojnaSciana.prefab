@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33883335426692040}
   - component: {fileID: 23033402318628764}
   - component: {fileID: 65949031150832868}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33405354547030368}
   - component: {fileID: 23625659331015050}
   - component: {fileID: 65840803139240214}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4945752990144118}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PodwojnaSciana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 33195489258099252}
   - component: {fileID: 23754701388116764}
   - component: {fileID: 65310033936090642}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 33807268627429388}
   - component: {fileID: 23789854139086166}
   - component: {fileID: 65731794217396336}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 33544715230746818}
   - component: {fileID: 23159388180200322}
   - component: {fileID: 65604237106937968}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 33052273347889798}
   - component: {fileID: 23535622686652754}
   - component: {fileID: 65370559357666164}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

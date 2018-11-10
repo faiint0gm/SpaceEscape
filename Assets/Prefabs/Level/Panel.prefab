@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33351796837663670}
   - component: {fileID: 23826161786586170}
   - component: {fileID: 65494111910746014}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33720703752353406}
   - component: {fileID: 23927684441114584}
   - component: {fileID: 65731582277835934}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 4920344838624738}
   - component: {fileID: 33377809086243628}
   - component: {fileID: 23162660681408138}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Button_console
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 4114761684098098}
   - component: {fileID: 33331665822176364}
   - component: {fileID: 23446639928024384}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: button_green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 33640590671711342}
   - component: {fileID: 23112864719912508}
   - component: {fileID: 65276200673756238}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4840087820212138}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 4423039412592062}
   - component: {fileID: 65186506129451232}
   - component: {fileID: 114963985840664708}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Console
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 33469961748991452}
   - component: {fileID: 23647238961339210}
   - component: {fileID: 65244264714804918}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 4747334327610906}
   - component: {fileID: 33614870913102126}
   - component: {fileID: 23973984616340116}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: button_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4127926410321032}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 33755122330678018}
   - component: {fileID: 23185843099960288}
   - component: {fileID: 65297430239469568}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 4096790295939510}
   - component: {fileID: 33724693636878104}
   - component: {fileID: 23634655188091494}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: button_orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,3 +847,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
+  lights: {fileID: 0}
