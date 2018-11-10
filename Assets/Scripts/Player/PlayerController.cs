@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    Animator anim;
+
     [Range(100,300)]
     public float rotationSpeed;
 
@@ -13,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     float direction;
     private void Start()
     {
+        anim = GetComponent<Animator>();
         direction = 0;
     }
 
@@ -26,9 +29,13 @@ public class PlayerController : MonoBehaviour {
     {
 
         if (Input.GetAxisRaw("Vertical") == 0 && Input.GetAxisRaw("Horizontal") == 0)
+        {
+            anim.SetBool("isWalking", false);
             transform.Translate(0, 0, 0);
+        }
         else
         {
+            anim.SetBool("isWalking", true);
             Move(Pos(Input.GetAxisRaw ("Vertical"), Input.GetAxisRaw("Horizontal")));
         }
     }
