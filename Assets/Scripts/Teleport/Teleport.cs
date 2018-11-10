@@ -14,7 +14,9 @@ public class Teleport : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            CameraController.instance.teleportCam = true;
             other.transform.position = Destination;
+            StartCoroutine(CameraController.instance.MoveAfterTeleport(3));
         }
     }
 
