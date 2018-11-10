@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4161745158738822}
   - component: {fileID: 33005959284054358}
   - component: {fileID: 23627065367033364}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Button_console
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4341400959175868}
   - component: {fileID: 33404804760054168}
   - component: {fileID: 23589570459892576}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: button_orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4506014635275932}
   - component: {fileID: 33857132848080660}
   - component: {fileID: 23832330568276094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: button_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4629560121126800}
   - component: {fileID: 33574437327963174}
   - component: {fileID: 23503158873155382}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: button_green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4028868388075704}
   - component: {fileID: 114433736666326592}
-  m_Layer: 0
+  - component: {fileID: 114178787739526996}
+  - component: {fileID: 65674674675462364}
+  m_Layer: 9
   m_Name: Switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +104,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1896275926303320}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 6.545, y: -0.297, z: -5.199999}
+  m_LocalPosition: {x: 1.3157207, y: -0.49, z: 13.800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4161745158738822}
@@ -334,6 +336,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1417000931998988}
   m_Mesh: {fileID: 4300000, guid: aae378b3deb0e3942968aa5866e1b113, type: 3}
+--- !u!65 &65674674675462364
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896275926303320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21045999, y: 0.99, z: 1.37}
+  m_Center: {x: 0.1733452, y: 1.85, z: -0}
+--- !u!114 &114178787739526996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896275926303320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95f960893cc0a4a892049b68ccf556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleTarget: {fileID: 0}
 --- !u!114 &114433736666326592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -345,5 +371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d0f9473613de146a8d35b13b21b16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets: []
+  targets:
+  - obj: {fileID: 1896275926303320}
+    positive: 1
+  - obj: {fileID: 1896275926303320}
+    positive: 0
   lights: {fileID: 2100000, guid: 93c2883c2fcc193419f2f8fc8124bb4b, type: 2}
