@@ -21,9 +21,9 @@ public class PortalCollider : MonoBehaviour
                 destination.position.x,
                 other.transform.position.y,
                 destination.position.z
-            ) + destination.right * 1f;
+            ) + destination.right * 1.2f;
             other.transform.position = newPosition;
-            StartCoroutine(CameraController.instance.MoveAfterTeleport(1));
+            StartCoroutine(CameraController.instance.MoveAfterTeleport(0.5f));
         }
     }
 }

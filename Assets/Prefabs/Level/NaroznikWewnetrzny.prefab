@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33964293097293482}
   - component: {fileID: 23023284228260272}
   - component: {fileID: 65798627554536318}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: NaroznikWewnetrzny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33472098384985598}
   - component: {fileID: 23224100441127828}
   - component: {fileID: 65746709708213612}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
