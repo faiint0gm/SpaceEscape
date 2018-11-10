@@ -24,9 +24,19 @@ public class PortalTargetHandle : Editor
             Quaternion.identity
         );
 
+        Quaternion entryRotation = Handles.RotationHandle(
+            entry.rotation,
+            entry.position
+        );
+
+        Quaternion exitRotation = Handles.RotationHandle(
+            exit.rotation,
+            exit.position
+        );
+
         if (EditorGUI.EndChangeCheck())
         {
-            Undo.RecordObject(portal, "Change portal destination.");
+            Undo.RecordObject(portal, "Change entry destination.");
             entry.position = new Vector3(
                     Mathf.Round(entryDestination.x),
                     0,
@@ -37,6 +47,37 @@ public class PortalTargetHandle : Editor
                     0,
                     Mathf.Round(exitDestination.z)
                 );
+
+            Vector3 entryEuler = entryRotation.eulerAngles;
+            entryEuler.x = 0f;
+            entryEuler.y = roundTo90(entryEuler.y);
+            entryEuler.z = 0f;
+            entry.eulerAngles = entryEuler;
+
+            Vector3 exitEuler = exitRotation.eulerAngles;
+            exitEuler.x = 0f;
+            exitEuler.y = roundTo90(exitEuler.y);
+            exitEuler.z = 0f;
+            exit.eulerAngles = exitEuler;
+        }
+    }
+
+    private float roundTo90 (float angle)
+    {
+        if (angle >= 45f && angle < 135f)
+        {
+            return 90f;
+        }
+        else if (angle >= 135f && angle < 225f)
+        {
+            return 180f;
+        }
+        else if (angle >= 225f && angle < 315f)
+        {
+            return 270f;
+        } else
+        {
+            return 0f;
         }
     }
 }
