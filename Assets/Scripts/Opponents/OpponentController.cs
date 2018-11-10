@@ -5,8 +5,6 @@ using UnityEngine.AI;
 
 public class OpponentController : MonoBehaviour {
 
-    public static OpponentController instance;
-
     [Header("Rotation Config")]
     [Range(0,359)]
     public float minAngle = 0;
@@ -17,8 +15,10 @@ public class OpponentController : MonoBehaviour {
 
 
     bool increasing;
-    float actualAngle;
+    [System.NonSerialized]
+    public float actualAngle;
     float rotationMultiplier;
+     float angleRange;
     void Awake()
     {
         if(minAngle>maxAngle)
@@ -27,14 +27,8 @@ public class OpponentController : MonoBehaviour {
             Application.Quit();
         }
 
+        angleRange = maxAngle - minAngle;
         rotationMultiplier = 100;
-        transform.rotation = Quaternion.Euler(0, minAngle, 0);
-        actualAngle = minAngle;
-    }
-
-    private void FixedUpdate()
-    {
-        Rotate();
     }
 
     void CheckIncreasing()
@@ -49,17 +43,36 @@ public class OpponentController : MonoBehaviour {
         }
     }
 
-    void Rotate()
+    public IEnumerator Rotate()
     {
         CheckIncreasing();
-        if (increasing)
-        {
-            actualAngle += rotationSpeed * rotationMultiplier *Time.deltaTime;
-        }
-        else
-            actualAngle -= rotationSpeed * rotationMultiplier * Time.deltaTime;
+        float tempAngle = transform.rotation.y;
 
-        transform.rotation = Quaternion.Euler(0, actualAngle, 0);
+        while (actualAngle > tempAngle + minAngle)
+        {
+            CheckIncreasing();
+            actualAngle -= rotationSpeed * rotationMultiplier * Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0, actualAngle, 0);
+            yield return null;
+        }
+
+        while (increasing)
+        {
+            CheckIncreasing();
+            actualAngle += rotationSpeed * rotationMultiplier *Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0, actualAngle, 0);
+            yield return null;
+        }
+
+        while (actualAngle >= tempAngle + angleRange * 0.5f)
+        {
+            CheckIncreasing();
+            actualAngle -= rotationSpeed * rotationMultiplier * Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0, actualAngle, 0);
+            yield return null;
+        }
+
+        gameObject.GetComponent<Patrol>().GotoNextPoint();
     }
 
 }
