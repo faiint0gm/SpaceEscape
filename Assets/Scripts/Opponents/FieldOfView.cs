@@ -18,7 +18,7 @@ public class FieldOfView : MonoBehaviour {
 	public int edgeResolveIterations;
 	public float edgeDstThreshold;
 
-	public MeshFilter viewMeshFilter;
+    public MeshFilter viewMeshFilter;
 	Mesh viewMesh;
 
 	void Start() {
@@ -44,6 +44,7 @@ public class FieldOfView : MonoBehaviour {
         {
             Debug.DrawLine(transform.position, visibleTarget.position,Color.red);
             Debug.Log("PLAYER IS FOUND BY OPPONENT");
+           
         }
     }
 
