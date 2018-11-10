@@ -38,14 +38,14 @@ public class PortalTargetHandle : Editor
         {
             Undo.RecordObject(portal, "Change entry destination.");
             entry.position = new Vector3(
-                    Mathf.Round(entryDestination.x),
+                    Mathf.Round(entryDestination.x / 0.5f) * 0.5f,
                     0,
-                    Mathf.Round(entryDestination.z)
+                    Mathf.Round(entryDestination.z / 0.5f) * 0.5f
                 );
             exit.position = new Vector3(
-                    Mathf.Round(exitDestination.x),
+                    Mathf.Round(exitDestination.x / 0.5f) * 0.5f,
                     0,
-                    Mathf.Round(exitDestination.z)
+                    Mathf.Round(exitDestination.z / 0.5f) * 0.5f
                 );
 
             Vector3 entryEuler = entryRotation.eulerAngles;
