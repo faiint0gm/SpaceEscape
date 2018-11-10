@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33679106624761368}
   - component: {fileID: 23260864997674808}
   - component: {fileID: 65257721982738140}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4318179779443354}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Scianav2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4173674706815682}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 33538758167780442}
   - component: {fileID: 23784812226219564}
   - component: {fileID: 65166084733282084}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 33422710319634454}
   - component: {fileID: 23952408279234298}
   - component: {fileID: 65360817897499530}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 33306098674082806}
   - component: {fileID: 23892103606986312}
   - component: {fileID: 65813572192651768}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 33520172079839820}
   - component: {fileID: 23568955210319612}
   - component: {fileID: 65000957546690076}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

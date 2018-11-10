@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if(!CameraController.instance.teleportCam)
             CheckMovement();
     }
 

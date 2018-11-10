@@ -10,7 +10,7 @@ public class PlayerInteraction : MonoBehaviour {
 	private void FixedUpdate () {
         RaycastHit hit;
         
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward), Color.green);
+        Debug.DrawRay(transform.position + Vector3.up, transform.TransformDirection(Vector3.forward), Color.green);
 
         int layerMask = 1 << 9;
 
