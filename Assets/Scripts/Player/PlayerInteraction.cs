@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour {
 
-    public Camera mainCamera;
     private bool hasInteractable = false;
+    public RectTransform interactText;
 
 	private void FixedUpdate () {
         RaycastHit hit;
@@ -27,15 +27,9 @@ public class PlayerInteraction : MonoBehaviour {
         {
             hasInteractable = false;
         }
-	}
 
-    void OnGUI()
-    {
-        if (hasInteractable)
-        {
-            Vector3 playerScreenPosition = mainCamera.WorldToScreenPoint(transform.position);
-            Rect labelBox = new Rect(playerScreenPosition.x - 40, playerScreenPosition.y - 50, 80, 25);
-            GUI.Box(labelBox, "Interact");
-        }
+        interactText.gameObject.SetActive(hasInteractable);
+
     }
+
 }
