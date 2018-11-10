@@ -142,7 +142,22 @@ ModelImporter:
     7400000: Crouched Walking
     9500000: //RootNode
     13700000: Mesh
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_diffuse
+    second: {fileID: 2800000, guid: 4820da69333eb4130a6dfa4831d66f6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_normal
+    second: {fileID: 2800000, guid: c7eb7feac0e08470fba9edec9fb76d73, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_specular
+    second: {fileID: 2800000, guid: 8a3bc4f36ace54ba8b25f9b15b6169af, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
