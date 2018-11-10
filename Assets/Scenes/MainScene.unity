@@ -378,6 +378,9 @@ MonoBehaviour:
   target: {fileID: 2096058385}
   targetPositionOffset: {x: 0, y: 23.8, z: -14.5}
   smooth: 0.05
+  teleportCam: 0
+  desiredPos: {x: 0, y: 0, z: 0}
+  destination: {x: 0, y: 0, z: 0}
 --- !u!1001 &653298072
 Prefab:
   m_ObjectHideFlags: 0
@@ -425,7 +428,7 @@ Prefab:
     - target: {fileID: 114243753881062914, guid: e776342d531d1f44bba41e897e78e47c,
         type: 2}
       propertyPath: m_destination.x
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e776342d531d1f44bba41e897e78e47c, type: 2}
@@ -1176,6 +1179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 150
   movementSpeed: 4
+  direction: 0
 --- !u!114 &2096058391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,3 +1192,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 433575433}
+  hasInteractable: 0
