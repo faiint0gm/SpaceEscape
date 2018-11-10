@@ -14,7 +14,7 @@ public class PlayerInteraction : MonoBehaviour {
 
         int layerMask = 1 << 9;
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1f, layerMask))
+        if (Physics.Raycast(transform.position + Vector3.up, transform.TransformDirection(Vector3.forward), out hit, 1f, layerMask))
         {
             hasInteractable = true;
 
