@@ -1,20 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-    public static void Die ()
-    {
+    public static GameManager instance;
 
+    public static float timer;
+
+    private void Awake()
+    {
+        MakeSingleton();
     }
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    private void MakeSingleton()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        } else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+
 }
