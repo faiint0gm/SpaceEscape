@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
+
+    public AudioMixer mainMixer;
+    public AudioMixerGroup sfxGroup;
+    public AudioMixerGroup musicGroup;
 
     public static float timer;
 

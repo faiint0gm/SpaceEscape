@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    public SoundContainer soundPlayer;
+
+    private void Awake()
+    {
+        soundPlayer.PlayMusicLoop(0);
+    }
 
     public void PlayGame ()
     {
