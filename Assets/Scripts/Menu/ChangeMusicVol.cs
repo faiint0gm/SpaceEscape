@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class ChangeMusicVol : MonoBehaviour {
 
-    public AudioMixer mainMixer;
     public Slider musicSlider;
     public Slider sfxSlider;
 
@@ -17,12 +16,12 @@ public class ChangeMusicVol : MonoBehaviour {
 
     public void SetMusicLvl ()
     {
-        mainMixer.SetFloat("musicVol", musicSlider.value);
+        GameManager.instance.mainMixer.SetFloat("musicVol", musicSlider.value);
     }
 
     public void SetSfxLvl()
     {
-        mainMixer.SetFloat("fx", sfxSlider.value);
+        GameManager.instance.mainMixer.SetFloat("fx", sfxSlider.value);
     }
 
     private void SetUpSingleton()
