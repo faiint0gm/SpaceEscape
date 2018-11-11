@@ -16549,7 +16549,6 @@ Transform:
   - {fileID: 1823818466}
   - {fileID: 1697564853}
   - {fileID: 1231127848}
-  - {fileID: 1013737640}
   - {fileID: 1541444042}
   - {fileID: 2023716822}
   - {fileID: 214847700}
@@ -16564,6 +16563,7 @@ Transform:
   - {fileID: 1241073897}
   - {fileID: 941113839}
   - {fileID: 816414246}
+  - {fileID: 1013737640}
   - {fileID: 1597976000}
   - {fileID: 648173126}
   - {fileID: 2081348799}
@@ -20049,10 +20049,10 @@ Transform:
   - {fileID: 514316853}
   - {fileID: 69362181}
   - {fileID: 513578900}
+  - {fileID: 1921664892}
   - {fileID: 330938033}
   - {fileID: 648047802}
   - {fileID: 369092141}
-  - {fileID: 1921664892}
   - {fileID: 353850207}
   - {fileID: 718225535}
   - {fileID: 127094393}
@@ -20142,15 +20142,15 @@ Transform:
   - {fileID: 1627717314}
   - {fileID: 591650834}
   - {fileID: 777513807}
-  - {fileID: 1994371618}
   - {fileID: 1265077810}
+  - {fileID: 1064410353}
   - {fileID: 345432216}
   - {fileID: 1184173089}
   - {fileID: 1335274714}
-  - {fileID: 2089780433}
-  - {fileID: 1222692260}
   - {fileID: 933204401}
-  - {fileID: 1064410353}
+  - {fileID: 1222692260}
+  - {fileID: 2089780433}
+  - {fileID: 1994371618}
   - {fileID: 1737201514}
   - {fileID: 14124281}
   - {fileID: 1045775987}
@@ -29066,6 +29066,11 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 660490694}
+    - target: {fileID: 114112804483148102, guid: f8d619640a5f54e7d950153ed64365d9,
+        type: 2}
+      propertyPath: targetPositionOffset.x
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8d619640a5f54e7d950153ed64365d9, type: 2}
   m_IsPrefabAsset: 0
@@ -30416,7 +30421,7 @@ Transform:
   - {fileID: 1271706920}
   - {fileID: 1005371421}
   m_Father: {fileID: 1313127775}
-  m_RootOrder: 138
+  m_RootOrder: 135
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1926042782 stripped
 Transform:
