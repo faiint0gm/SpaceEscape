@@ -12,16 +12,29 @@ public class TimerManagement : MonoBehaviour {
     public Text endTimeLose;
     public  GameObject winPanel;
     public  GameObject losePanel;
-  
+    public GameObject gameManagerPrefab;
+
+    public CameraController mainCamController;
     string minutes;
     string seconds;
 
+    int thisSceneNumber;
 	// Use this for initialization
 	void Start () {
+
+        if (GameManager.instance == null)
+            Instantiate(gameManagerPrefab);
+
+        GameManager.isWin = false;
+        GameManager.isDead = false;
+        GameManager.isLose = false;
+
         winPanel.SetActive(false);
         losePanel.SetActive(false);
         Time.timeScale = 1;
         GameManager.timer = Time.time;
+
+        StartCoroutine(NegativeBlinker.instance.BlinkTimes(3));
     }
 	
 	// Update is called once per frame
@@ -58,6 +71,9 @@ public class TimerManagement : MonoBehaviour {
 
     public void Lose()
     {
+        mainCamController.enabled = false;
+        mainCamController.target.gameObject.SetActive(false);
+
         losePanel.SetActive(true);
         finnished = true;
         endTimeLose.text = minutes + ":" + seconds;
@@ -73,13 +89,21 @@ public class TimerManagement : MonoBehaviour {
 
     public void RestartLevel()
     {
-        Application.LoadLevel(Application.loadedLevel);
+        thisSceneNumber = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(thisSceneNumber);
+        StartCoroutine(Restart());
+    }
+
+    IEnumerator Restart()
+    {
         winPanel.SetActive(false);
         losePanel.SetActive(false);
-        GameManager.isWin = false;
-        GameManager.isLose = false;
-        GameManager.isDead = false;
-        Time.timeScale = 1;
+
+        while(GameManager.isLose)
+        {
+            yield return null;
+        }
+        yield return StartCoroutine(NegativeBlinker.instance.BlinkTimes(3));
     }
 
     public void GoToMenu()
