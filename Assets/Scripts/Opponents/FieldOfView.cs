@@ -44,7 +44,12 @@ public class FieldOfView : MonoBehaviour {
         {
             Debug.DrawLine(transform.position, visibleTarget.position,Color.red);
             Debug.Log("PLAYER IS FOUND BY OPPONENT");
-            GameManager.isLose = true;
+            
+            if (!GameManager.isDead)
+            {
+                GameManager.isLose = true;
+                GameManager.isDead = true;
+            }
         }
     }
 
@@ -180,5 +185,18 @@ public class FieldOfView : MonoBehaviour {
 			pointB = _pointB;
 		}
 	}
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "Player")
+        {
+            if (!GameManager.isDead)
+            {
+                GameManager.isLose = true;
+                GameManager.isDead = true;
+            }
+        }
+    }
+
 
 }

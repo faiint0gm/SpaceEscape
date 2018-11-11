@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour {
 
     public static bool isLose = false;
 
+    public static bool isDead = false;
+
     private void Awake()
     {
         MakeSingleton();
