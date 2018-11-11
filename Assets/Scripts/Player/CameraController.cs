@@ -65,7 +65,7 @@ public class CameraController : MonoBehaviour {
         desiredPos = target.position + targetPositionOffset;
         while (t < time)
         {
-            t += Time.deltaTime;
+            t += Time.deltaTime *4;
             transform.position = Vector3.Lerp(startingPos, desiredPos, t);
             if (transform.position == desiredPos)
                 break;
