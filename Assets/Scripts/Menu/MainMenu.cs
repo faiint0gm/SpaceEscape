@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Time.timeScale = 1;
+        GameManager.isLose = false;
+        GameManager.isWin = false;
     }
 
     public void QuitGame ()

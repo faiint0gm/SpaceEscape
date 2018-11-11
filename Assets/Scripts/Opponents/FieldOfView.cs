@@ -44,7 +44,7 @@ public class FieldOfView : MonoBehaviour {
         {
             Debug.DrawLine(transform.position, visibleTarget.position,Color.red);
             Debug.Log("PLAYER IS FOUND BY OPPONENT");
-           
+            GameManager.isLose = true;
         }
     }
 

@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour {
 
     public static float timer;
 
+    public static bool isWin = false;
+
+    public static bool isLose = false;
+
     private void Awake()
     {
         MakeSingleton();
