@@ -1,7 +1,5 @@
-﻿#if UNITY_EDITOR
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
-
 
 [CustomEditor(typeof(Portal))]
 public class PortalTargetHandle : Editor
@@ -83,5 +81,3 @@ public class PortalTargetHandle : Editor
         }
     }
 }
-
-#endif
