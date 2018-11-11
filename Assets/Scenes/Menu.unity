@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657934, g: 0.4964136, b: 0.5748189, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -543,63 +543,8 @@ Prefab:
       propertyPath: sfxSlider
       value: 
       objectReference: {fileID: 73626259}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1634175449
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4772208166978018, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772208166978018, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772208166978018, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772208166978018, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772208166978018, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772208166978018, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772208166978018, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772208166978018, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114497218449547598, guid: e835a9a86641b864cb2f517f4718dd07,
-        type: 2}
-      propertyPath: musicSlider
-      value: 
-      objectReference: {fileID: 73626260}
-    - target: {fileID: 114497218449547598, guid: e835a9a86641b864cb2f517f4718dd07,
-        type: 2}
-      propertyPath: sfxSlider
-      value: 
-      objectReference: {fileID: 73626259}
-    - target: {fileID: 1858750722797888, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
-      propertyPath: m_Name
-      value: SfxManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 82836855579432746, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: e835a9a86641b864cb2f517f4718dd07, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1680884185
@@ -764,51 +709,149 @@ Prefab:
     - target: {fileID: 224158381703971486, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224250168739388956, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224878054058345422, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224632302768697908, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114406769523376084, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114406769523376084, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114406769523376084, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
-        type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114483867320214968, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114483867320214968, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114481225322899656, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114481225322899656, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
         type: 2}
       propertyPath: m_isInputParsingRequired
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114995811436249158, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224158381703971486, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224250168739388956, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224250168739388956, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114271951958474414, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224878054058345422, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224632302768697908, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224632302768697908, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114271951958474414, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_MinValue
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 114271951958474414, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114271951958474414, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.8773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 114271951958474414, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.17914493
+      objectReference: {fileID: 0}
+    - target: {fileID: 114271951958474414, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114099014311019438, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114099014311019438, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.7833755
+      objectReference: {fileID: 0}
+    - target: {fileID: 114099014311019438, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114825343160436030, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.7833755
+      objectReference: {fileID: 0}
+    - target: {fileID: 114825343160436030, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325285753163348, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496341816230800, guid: c2942cae3ff6e8c4aa8f3bfedaffbc54, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -895,6 +938,9 @@ GameObject:
   - component: {fileID: 1855950359}
   - component: {fileID: 1855950358}
   - component: {fileID: 1855950362}
+  - component: {fileID: 1855950365}
+  - component: {fileID: 1855950364}
+  - component: {fileID: 1855950363}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -990,3 +1036,211 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa8e6a017df78d4bb8ef0aba66a58e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundPlayer: {fileID: 1855950365}
+--- !u!82 &1855950363
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855950357}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1855950364
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855950357}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1855950365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855950357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7054830fdf545d7965cd27bbe3c955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicClips:
+  - {fileID: 8300000, guid: 61580003761d94771ac4e4af68797e47, type: 3}
+  sfxClips:
+  - {fileID: 8300000, guid: d8385e6922f14443ba476f0009a480dd, type: 3}
+  musicSource: {fileID: 1855950364}
+  sfxSource: {fileID: 1855950363}

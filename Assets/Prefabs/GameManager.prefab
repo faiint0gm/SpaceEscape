@@ -51,4 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b708ff38066f4c1409b47e185ec6f488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
+  mainMixer: {fileID: 24100000, guid: 5fc8e82b2a3bcae44bffa23e34ac10ab, type: 2}
+  sfxGroup: {fileID: 243287699045716440, guid: 5fc8e82b2a3bcae44bffa23e34ac10ab, type: 2}
+  musicGroup: {fileID: 243866516938920810, guid: 5fc8e82b2a3bcae44bffa23e34ac10ab,
+    type: 2}
