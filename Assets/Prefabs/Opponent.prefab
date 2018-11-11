@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710241838493642}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 6, y: 2.05, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4677183618025608}
@@ -248,7 +248,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &114433850859367646
 MonoBehaviour:
@@ -286,12 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opponentController: {fileID: 114962845951599358}
-  points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  agentStopped: 0
+  points: []
 --- !u!114 &114962845951599358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,7 +301,6 @@ MonoBehaviour:
   minAngle: 0
   maxAngle: 270
   rotationSpeed: 0.5
-  rotateFinished: 0
 --- !u!136 &136701454339000536
 CapsuleCollider:
   m_ObjectHideFlags: 1
