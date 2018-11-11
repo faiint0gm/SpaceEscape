@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 321d449dfa6489a4e9ccb287b2a351d6
+guid: f419285ffb5e94111a79f91f8ba98412
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -142,7 +142,22 @@ ModelImporter:
     7400000: mixamo.com
     9500000: //RootNode
     13700000: parasiteZombie
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: parasiteZombie_diffuse
+    second: {fileID: 2800000, guid: 2112ec6239d604e8181589b76a53a2f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: parasiteZombie_normal
+    second: {fileID: 2800000, guid: 42ce3a1d32dd14924ba5bde161dd0364, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: parasiteZombie_specular
+    second: {fileID: 2800000, guid: 95e35c7e6417840438e7cdba117b5b3f, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -162,7 +177,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -215,10 +230,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
