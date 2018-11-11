@@ -40,15 +40,19 @@ public class FieldOfView : MonoBehaviour {
     void LateUpdate()
     {
         DrawFieldOfView();
-        foreach (Transform visibleTarget in visibleTargets)
+        if (!GameManager.isDead)
         {
-            Debug.DrawLine(transform.position, visibleTarget.position,Color.red);
-            Debug.Log("PLAYER IS FOUND BY OPPONENT");
-            
-            if (!GameManager.isDead)
+            foreach (Transform visibleTarget in visibleTargets)
             {
-                GameManager.isLose = true;
-                GameManager.isDead = true;
+                Debug.DrawLine(transform.position, visibleTarget.position, Color.red);
+                Debug.Log("PLAYER IS FOUND BY OPPONENT");
+
+                if (!GameManager.isDead)
+                {
+                    FindObjectOfType<Canvas>().gameObject.GetComponent<SoundContainer>().PlaySound(2);
+                    GameManager.isLose = true;
+                    GameManager.isDead = true;
+                }
             }
         }
     }
@@ -188,7 +192,7 @@ public class FieldOfView : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.CompareTag("Player"))
         {
             if (!GameManager.isDead)
             {

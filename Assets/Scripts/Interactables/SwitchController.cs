@@ -10,6 +10,8 @@ public class Target
 
 public class SwitchController : MonoBehaviour, IInteractable {
 
+    public SoundContainer soundPlayer;
+
     public Target[] targets;
     public Material lights;
     private bool m_isActive = false;
@@ -20,9 +22,11 @@ public class SwitchController : MonoBehaviour, IInteractable {
 
         if (m_isActive)
         {
+            soundPlayer.PlaySound(0);
             lights.EnableKeyword("_EMISSION");
         } else
         {
+            soundPlayer.PlaySound(1);
             lights.DisableKeyword("_EMISSION");
         }
 
