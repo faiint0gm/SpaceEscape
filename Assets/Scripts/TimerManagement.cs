@@ -22,7 +22,6 @@ public class TimerManagement : MonoBehaviour {
         losePanel.SetActive(false);
         Time.timeScale = 1;
         GameManager.timer = Time.time;
-        
     }
 	
 	// Update is called once per frame
@@ -30,7 +29,14 @@ public class TimerManagement : MonoBehaviour {
         /*if (finnished)
             return;*/
         CurrentTime();
-
+        if (GameManager.isWin)
+        {
+            Finnish();
+        }
+        if (GameManager.isLose)
+        {
+            Lose();
+        }
     }
 
     public void CurrentTime()
@@ -61,6 +67,8 @@ public class TimerManagement : MonoBehaviour {
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameManager.isWin = false;
+        Time.timeScale = 1;
     }
 
     public void RestartLevel()
@@ -68,11 +76,15 @@ public class TimerManagement : MonoBehaviour {
         Application.LoadLevel(Application.loadedLevel);
         winPanel.SetActive(false);
         losePanel.SetActive(false);
+        GameManager.isWin = false;
+        GameManager.isLose = false;
         Time.timeScale = 1;
     }
 
     public void GoToMenu()
     {
+        GameManager.isWin = false;
+        GameManager.isLose = false;
         SceneManager.LoadScene("Menu");
     }
 
