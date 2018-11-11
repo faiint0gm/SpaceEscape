@@ -10,8 +10,8 @@ public class PathPoint : MonoBehaviour {
         {
             if (other.gameObject.GetComponent<Patrol>().enabled)
             {
-                other.gameObject.GetComponent<OpponentController>().actualAngle = transform.rotation.y;
-                StartCoroutine(other.gameObject.GetComponent<OpponentController>().Rotate());
+                //other.gameObject.GetComponent<OpponentController>().actualAngle = transform.rotation.y;
+                //StartCoroutine(other.gameObject.GetComponent<OpponentController>().Rotate());
             }
         }
     }

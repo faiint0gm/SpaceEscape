@@ -14,8 +14,9 @@ public class Patrol : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        GetComponent<OpponentController>().actualAngle = transform.rotation.y;
-        StartCoroutine(opponentController.Rotate());
+        agent.autoBraking = false;
+        //GetComponent<OpponentController>().actualAngle = transform.rotation.y;
+        //StartCoroutine(opponentController.Rotate());
     }
 
 
@@ -26,6 +27,12 @@ public class Patrol : MonoBehaviour
          
         agent.destination = points[destPoint].position;
         destPoint = (destPoint + 1) % points.Length;
+    }
+
+    private void Update()
+    {
+        if(!agent.pathPending && agent.remainingDistance < 0.5f)
+            GotoNextPoint();
     }
 
 }
