@@ -78,6 +78,7 @@ public class TimerManagement : MonoBehaviour {
         losePanel.SetActive(false);
         GameManager.isWin = false;
         GameManager.isLose = false;
+        GameManager.isDead = false;
         Time.timeScale = 1;
     }
 
