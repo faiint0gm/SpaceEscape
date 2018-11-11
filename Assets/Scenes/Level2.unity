@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9301,7 +9301,7 @@ Transform:
   - {fileID: 558188038}
   - {fileID: 1372170515}
   m_Father: {fileID: 1313127775}
-  m_RootOrder: 301
+  m_RootOrder: 299
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &623698787
 Prefab:
@@ -20644,9 +20644,9 @@ Transform:
   - {fileID: 1528675131}
   - {fileID: 1708863909}
   - {fileID: 209655466}
+  - {fileID: 622625028}
   - {fileID: 868626741}
   - {fileID: 1263428820}
-  - {fileID: 622625028}
   - {fileID: 153076047}
   - {fileID: 7392096}
   - {fileID: 1419091128}
@@ -25537,21 +25537,66 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114176990162933462, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176990162933462, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114392440426652258, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114392440426652258, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114386781249820972, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114386781249820972, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447174204735420, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447174204735420, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114227025349653632, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114227025349653632, guid: 299cf95a989d14c5ea980ed66ba73a03,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 223932711912997802, guid: 299cf95a989d14c5ea980ed66ba73a03,
         type: 2}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1288934610}
-    - target: {fileID: 114059442813840644, guid: 299cf95a989d14c5ea980ed66ba73a03,
+    - target: {fileID: 114428192002308212, guid: 299cf95a989d14c5ea980ed66ba73a03,
         type: 2}
-      propertyPath: m_fontSize
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114059442813840644, guid: 299cf95a989d14c5ea980ed66ba73a03,
-        type: 2}
-      propertyPath: m_fontSizeBase
-      value: 40
-      objectReference: {fileID: 0}
+      propertyPath: mainCamController
+      value: 
+      objectReference: {fileID: 1836469826}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 299cf95a989d14c5ea980ed66ba73a03, type: 2}
   m_IsPrefabAsset: 0
@@ -27154,6 +27199,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8d619640a5f54e7d950153ed64365d9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1836469826 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114112804483148102, guid: f8d619640a5f54e7d950153ed64365d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1836469825}
+  m_Script: {fileID: 11500000, guid: a71382dccb3ae486b98531a53f71bc5e, type: 3}
 --- !u!4 &1838482463 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4318179779443354, guid: 3fd56909ebf77ad4fa0861c0cac5dffc,
