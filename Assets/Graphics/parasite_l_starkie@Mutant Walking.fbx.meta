@@ -142,7 +142,22 @@ ModelImporter:
     7400000: mixamo.com
     9500000: //RootNode
     13700000: parasiteZombie
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: parasiteZombie_diffuse
+    second: {fileID: 2800000, guid: 07e36a1cf7a87451b870700b9169834d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: parasiteZombie_normal
+    second: {fileID: 2800000, guid: 6ffe84d05e58048478b4b7f911451376, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: parasiteZombie_specular
+    second: {fileID: 2800000, guid: 401a31c4fc5154520b0b121487fed802, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
