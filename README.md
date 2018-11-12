@@ -19,3 +19,4 @@ Level developer       : Paweł Sołtys
 UI Developer          : Paweł Ratalewski
 Game and Level Design : Piotr Samborowski
 Graphics              : Jurand Szczerkowski
+Music and Sounds      : Piotr Rudnicki
