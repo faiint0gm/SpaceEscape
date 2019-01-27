@@ -16,6 +16,11 @@ public class SwitchController : MonoBehaviour, IInteractable {
     public Material lights;
     private bool m_isActive = false;
 
+    void Start()
+    {
+        soundPlayer = FindObjectOfType<SoundContainer>();
+    }
+
     public void Activate ()
     {
         m_isActive = !m_isActive;
